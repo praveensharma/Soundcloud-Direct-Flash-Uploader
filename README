@@ -1,0 +1,8 @@
+This is a rough cobbling together of SWFUpload and the dasflash Soundcloud_AS3_API library to allow for direct upload to soundcloud. Security is currently an issue if you are not requiring users to connect with soundcloud prior to upload, and are instead using a fixed key/secret token.
+
+The following functions have been modified:
+
+SWFUpload.prototype.uploadComplete in swfupload.js
+protected function httpStatusHandler(event:HTTPStatusEvent):void in SoundcloudDelegate.as
+
+Please check embed_template.html for an example of the parameters the swf file is expecting.
